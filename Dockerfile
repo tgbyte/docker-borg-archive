@@ -1,7 +1,7 @@
 FROM tgbyte/cron
 
 RUN apt-get update && \
-    apt-get install -y lftp
+    apt-get install -y lftp openssh-client
 
 ADD entrypoint.d/ /entrypoint.d
 
