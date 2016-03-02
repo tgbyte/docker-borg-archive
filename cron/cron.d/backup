@@ -1,0 +1,3 @@
+SHELL=/bin/sh
+
+42 17 * * * root lftp -f /backup/backup.lftp
