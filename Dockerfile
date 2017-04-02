@@ -1,4 +1,4 @@
-FROM tgbyte/cron
+FROM tgbyte/cron:armhf
 
 RUN apt-get update && \
     apt-get install -y lftp openssh-client
