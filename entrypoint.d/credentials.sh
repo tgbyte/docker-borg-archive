@@ -1,5 +1,6 @@
 #!/bin/sh
-echo "open -u ${FTP_USER},${FTP_PASSWORD} ${FTP_HOST}
+echo "set sftp:auto-confirm yes
+open -u ${FTP_USER},${FTP_PASSWORD} ${FTP_HOST}
 mkdir -p ${FTP_DIR}
 mirror -c -R --loop /var/backups/borg ${FTP_DIR}
 exit" > /backup/backup.lftp
